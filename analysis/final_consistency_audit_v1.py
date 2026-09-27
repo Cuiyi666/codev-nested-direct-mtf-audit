@@ -85,7 +85,8 @@ def main() -> int:
     bib_count = len(re.findall(r"^@", (ROOT / "manuscript" / "references.bib").read_text(encoding="utf-8"), re.M))
     check("references", bib_count >= 20 and cite_count >= 10, f"{bib_count} bib entries; {cite_count} citation commands", failures, lines)
     check("back matter", all(s in text for s in ["Funding and author contributions", "AI use and conflicts", "Data and code availability", "Software and license disclosure"]), "funding, contributions, AI, data, license sections present", failures, lines)
-    check("archive DOI", "No public archive DOI is currently present" in (ROOT / "submission" / "DATA_ARCHIVE_AND_LICENSE_CHECKLIST.md").read_text(encoding="utf-8"), "DOI remains an AUTHOR INPUT REQUIRED item", failures, lines)
+    checklist = (ROOT / "submission" / "DATA_ARCHIVE_AND_LICENSE_CHECKLIST.md").read_text(encoding="utf-8")
+    check("archive DOI", "10.5281/zenodo.22995511" in checklist, "Zenodo DOI recorded", failures, lines)
     check("PDF exists", PDF.exists() and PDF.stat().st_size > 0, f"{PDF.stat().st_size if PDF.exists() else 0} bytes", failures, lines)
 
     lines += [
@@ -107,7 +108,7 @@ def main() -> int:
         "",
         "## Blocking author inputs",
         "",
-        "1. Public archive DOI for the permitted derived package (or an explicit decision to submit without one if the target permits).",
+        "1. Confirm that the published Zenodo DOI remains the version cited in the manuscript and cover letter.",
         "2. Corresponding-author affiliation, email, ORCID, and final author-order confirmation.",
         "3. Institution-approved wording for the authorized CODE V license statement.",
         "4. Confirmation of target route: Optical Engineering, Applied Optics, or Optics Express.",

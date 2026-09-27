@@ -2,6 +2,8 @@ cff-version: 1.2.0
 title: "Nested direct-MTF decision audit: CODE V study companion"
 message: "If you use this repository, please cite the accompanying Optics Express manuscript."
 type: software
+version: "v1.0.0"
+date-released: 2026-09-27
 authors:
   - family-names: Cui
     given-names: Yi
@@ -23,4 +25,8 @@ keywords:
   - reproducible computational optics
 repository-code: "https://github.com/Cuiyi666/codev-nested-direct-mtf-audit"
 license: "MIT"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22995511"
+    description: "Zenodo archive for the v1.0.0 release"
 

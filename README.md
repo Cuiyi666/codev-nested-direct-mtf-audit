@@ -6,6 +6,10 @@ This repository contains the public-safe analysis companion for:
 
 The study compares a nominal direct-MTF ranking rule with a nested perturbation-aware rule under a frozen equal-cost contract. The headline evidence is deliberately bounded to an eight-system CODE V cohort, three passing held-out systems, two retained screening failures, and a representative—not identical-prescription—Zemax procedure audit.
 
+## DOI
+
+The citable `v1.0.0` release is archived at Zenodo: [10.5281/zenodo.22995511](https://doi.org/10.5281/zenodo.22995511).
+
 ## Contents
 
 - `analysis/` — author-written score parsing, public measured-data analysis, consistency audit, and manifest utilities.
