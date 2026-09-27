@@ -18,7 +18,16 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
-    files = [p for p in ROOT.rglob("*") if p.is_file() and p.name != OUT.name]
+    skip_dirs = {".git", "__pycache__"}
+    skip_suffixes = {".pyc", ".aux", ".log", ".bbl", ".blg", ".fdb_latexmk", ".fls", ".synctex.gz"}
+    files = [
+        p
+        for p in ROOT.rglob("*")
+        if p.is_file()
+        and p.name != OUT.name
+        and not any(part in skip_dirs for part in p.relative_to(ROOT).parts)
+        and p.suffix not in skip_suffixes
+    ]
     with OUT.open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["path", "bytes", "sha256"])
