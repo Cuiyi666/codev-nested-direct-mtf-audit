@@ -1,0 +1,4 @@
+lens,status,nominal,mean,q05,minimum,restore_ok,error
+tessar,pass,2,2,2,2,True,
+petzval,pass,1,1,1,1,True,
+wideang,pass,3,3,3,3,True,

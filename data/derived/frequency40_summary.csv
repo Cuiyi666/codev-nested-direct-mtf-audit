@@ -1,0 +1,9 @@
+lens,status,traditional_choice,nested_choice,disagreement,restore_ok,error
+gaosi,pass,3,2,True,True,
+fisheye,pass,1,1,False,True,
+cooke1,pass,1,1,False,True,
+doublet,pass,3,4,True,True,
+ag_triplet,pass,1,1,False,True,
+oradbg01,pass,3,3,False,True,
+dbgauss,pass,2,2,False,True,
+ballcouple,pass,1,1,False,True,

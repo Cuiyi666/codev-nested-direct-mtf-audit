@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Nested direct-MTF decision audit: CODE V study companion"
+message: "If you use this repository, please cite the accompanying Optics Express manuscript."
+type: software
+authors:
+  - family-names: Cui
+    given-names: Yi
+    orcid: "https://orcid.org/0009-0006-3274-2326"
+  - family-names: Zhang
+    given-names: "Chizhi Chris"
+  - family-names: Lou
+    given-names: Hongwei
+  - family-names: Jiang
+    given-names: Jian
+  - family-names: Sheng
+    given-names: Lei
+abstract: "Public-safe analysis companion for an equal-cost nested direct-MTF decision audit in CODE V."
+keywords:
+  - optical system design
+  - optical optimization
+  - modulation transfer function
+  - tolerance sensitivity
+  - reproducible computational optics
+repository-code: "https://github.com/<AUTHOR_OR_ORGANIZATION>/<REPOSITORY>"
+license: "SEE-LICENSE-PENDING"
+
