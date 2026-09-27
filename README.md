@@ -38,5 +38,8 @@ The scripts contain no workstation-specific paths. The private evidence archive 
 
 ## License
 
-The code/data license is intentionally pending author confirmation. Do not assume permission to redistribute proprietary optical files or vendor reports from this repository.
+The author-written code is released under the [MIT License](LICENSE). The
+author-generated derived data and figures are released under [CC BY 4.0](LICENSE-DATA.md).
+These licenses do not cover CODE V or Zemax software, license keys, commercial
+or library prescriptions, vendor reports, or third-party source datasets.
 

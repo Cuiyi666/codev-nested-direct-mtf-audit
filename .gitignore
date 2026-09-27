@@ -16,6 +16,7 @@ holdout_source_lenses/
 *.seq
 *.seq*
 license*
+!LICENSE
+!LICENSE-DATA.md
 !LICENSE_PENDING.md
-LICENSE
 
